@@ -1,0 +1,45 @@
+package com.example.data.model
+
+data class UnitPiece(
+    val id: Int,
+    var x: Float,
+    var y: Float,
+    var team: String, // "p" or "e"
+    var territoryIndex: Int = -1,
+    var angle: Float = if (team == "p") 0f else Math.PI.toFloat(),
+    var ox: Float = 0f,
+    var oy: Float = 0f,
+    var order: String? = null,
+    var gtx: Float? = null,
+    var gty: Float? = null,
+    var targetIdx: Int? = null,
+    var zone: String? = null, // "FL", "FR", "BL", "BR"
+    var orbiting: Boolean? = null,
+    var orbitDir: Int = if (Math.random() > 0.5) 1 else -1,
+    var groupId: Int = 0,
+    var isAlive: Boolean = true,
+    var hp: Float = 100f,
+    var maxHp: Float = 100f,
+    var isGeneral: Boolean = false,
+    var isRetreating: Boolean = false,
+    var retreatTimer: Float = 0f,
+    var hitFlash: Float = 0f,
+    var isEngaged: Boolean = false,
+    var obey: Boolean = false,
+    var formation: String? = null,
+    var formAng: Float? = null,
+    var isGotoBlocked: Boolean = false,
+    var slotIdx: Int = 0,
+    var isHidden: Boolean = false,
+    var role: String = "atk", // "atk" or "inf" (informant)
+    var isRunner: Boolean = false,
+    var isCommander: Boolean = false,
+    var holdBack: Boolean = false,
+    var baseGtx: Float? = null,
+    var baseGty: Float? = null,
+    var gotoOrder: Boolean = false,
+    var formSnap: String? = null,
+    var genModeSnap: String? = null,
+    var warn: Boolean = false,
+    var kxHole: Int = 0
+)

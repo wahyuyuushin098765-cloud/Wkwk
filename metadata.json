@@ -1,0 +1,6 @@
+{
+  "name": "Perang Strategi",
+  "description": "Game Perang Real Time Strategi (RTS) taktik Nusantara dengan formasi militer kuno, multiplayer online, dan fitur chat antar pemain.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
